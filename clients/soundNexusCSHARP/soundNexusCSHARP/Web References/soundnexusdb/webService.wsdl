@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="urn:soundNexusWS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="urn:soundNexusWS" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="urn:soundNexusWS">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getAllAlbum" />
+  <wsdl:message name="getAllAlbumResponse">
+    <wsdl:part name="response" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllAlbumSongs" />
+  <wsdl:message name="getAllAlbumSongsResponse">
+    <wsdl:part name="response" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="searchAlbum">
+    <wsdl:part name="searchalbums" type="xsd:string" />
+    <wsdl:part name="searchtype" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="searchAlbumResponse">
+    <wsdl:part name="response" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="searchAlbumSongs">
+    <wsdl:part name="searchsong" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="searchAlbumSongsResponse">
+    <wsdl:part name="response" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addAlbumSongs">
+    <wsdl:part name="addtitle" type="xsd:string" />
+    <wsdl:part name="addfile" type="xsd:string" />
+    <wsdl:part name="addalbum" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addAlbumSongsResponse">
+    <wsdl:part name="response" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addAlbums">
+    <wsdl:part name="addtitle" type="xsd:string" />
+    <wsdl:part name="addartist" type="xsd:string" />
+    <wsdl:part name="addgenre" type="xsd:string" />
+    <wsdl:part name="adddate" type="xsd:date" />
+  </wsdl:message>
+  <wsdl:message name="addAlbumsResponse">
+    <wsdl:part name="response" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="soundNexusPortType">
+    <wsdl:operation name="getAllAlbum">
+      <wsdl:input message="tns:getAllAlbum" />
+      <wsdl:output message="tns:getAllAlbumResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllAlbumSongs">
+      <wsdl:input message="tns:getAllAlbumSongs" />
+      <wsdl:output message="tns:getAllAlbumSongsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="searchAlbum">
+      <wsdl:input message="tns:searchAlbum" />
+      <wsdl:output message="tns:searchAlbumResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="searchAlbumSongs">
+      <wsdl:input message="tns:searchAlbumSongs" />
+      <wsdl:output message="tns:searchAlbumSongsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addAlbumSongs">
+      <wsdl:input message="tns:addAlbumSongs" />
+      <wsdl:output message="tns:addAlbumSongsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addAlbums">
+      <wsdl:input message="tns:addAlbums" />
+      <wsdl:output message="tns:addAlbumsResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="soundNexusBinding" type="tns:soundNexusPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="getAllAlbum">
+      <soap:operation soapAction="http://localhost/IPT/soundNexus/services/webService.php/getAllAlbum" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllAlbumSongs">
+      <soap:operation soapAction="http://localhost/IPT/soundNexus/services/webService.php/getAllAlbumSongs" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchAlbum">
+      <soap:operation soapAction="http://localhost/IPT/soundNexus/services/webService.php/searchAlbum" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchAlbumSongs">
+      <soap:operation soapAction="http://localhost/IPT/soundNexus/services/webService.php/searchAlbumSongs" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addAlbumSongs">
+      <soap:operation soapAction="http://localhost/IPT/soundNexus/services/webService.php/addAlbumSongs" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addAlbums">
+      <soap:operation soapAction="http://localhost/IPT/soundNexus/services/webService.php/addAlbums" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="soundNexus">
+    <wsdl:port name="soundNexusPort" binding="tns:soundNexusBinding">
+      <soap:address location="http://localhost/IPT/soundNexus/services/webService.php" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

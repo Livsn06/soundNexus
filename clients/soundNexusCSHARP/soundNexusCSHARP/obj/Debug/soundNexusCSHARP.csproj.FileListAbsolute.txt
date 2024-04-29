@@ -1,0 +1,14 @@
+C:\xampp\htdocs\IPT\soundNexus\clients\soundNexusCSHARP\soundNexusCSHARP\bin\Debug\soundNexusCSHARP.exe.config
+C:\xampp\htdocs\IPT\soundNexus\clients\soundNexusCSHARP\soundNexusCSHARP\bin\Debug\soundNexusCSHARP.exe
+C:\xampp\htdocs\IPT\soundNexus\clients\soundNexusCSHARP\soundNexusCSHARP\bin\Debug\soundNexusCSHARP.pdb
+C:\xampp\htdocs\IPT\soundNexus\clients\soundNexusCSHARP\soundNexusCSHARP\obj\Debug\soundNexusCSHARP.csproj.AssemblyReference.cache
+C:\xampp\htdocs\IPT\soundNexus\clients\soundNexusCSHARP\soundNexusCSHARP\obj\Debug\soundNexusCSHARP.Form1.resources
+C:\xampp\htdocs\IPT\soundNexus\clients\soundNexusCSHARP\soundNexusCSHARP\obj\Debug\soundNexusCSHARP.Properties.Resources.resources
+C:\xampp\htdocs\IPT\soundNexus\clients\soundNexusCSHARP\soundNexusCSHARP\obj\Debug\soundNexusCSHARP.csproj.GenerateResource.cache
+C:\xampp\htdocs\IPT\soundNexus\clients\soundNexusCSHARP\soundNexusCSHARP\obj\Debug\soundNexusCSHARP.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\IPT\soundNexus\clients\soundNexusCSHARP\soundNexusCSHARP\obj\Debug\soundNexusCSHARP.exe
+C:\xampp\htdocs\IPT\soundNexus\clients\soundNexusCSHARP\soundNexusCSHARP\obj\Debug\soundNexusCSHARP.pdb
+C:\xampp\htdocs\IPT\soundNexus\clients\soundNexusCSHARP\soundNexusCSHARP\bin\Debug\Newtonsoft.Json.dll
+C:\xampp\htdocs\IPT\soundNexus\clients\soundNexusCSHARP\soundNexusCSHARP\bin\Debug\Newtonsoft.Json.xml
+C:\xampp\htdocs\IPT\soundNexus\clients\soundNexusCSHARP\soundNexusCSHARP\obj\Debug\soundNexusCSHARP.csproj.CopyComplete
+C:\xampp\htdocs\IPT\soundNexus\clients\soundNexusCSHARP\soundNexusCSHARP\obj\Debug\soundNexusCSHARP.Form2.resources
